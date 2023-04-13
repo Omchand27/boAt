@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
 
-const DailyDeals = ({ title }) => {
+const DailyDeals = ({ title, wid }) => {
   const Deals = [
     {
       title: "Airdopes 131",
@@ -46,22 +46,23 @@ const DailyDeals = ({ title }) => {
   ];
 
   return (
-    <Box w="95%" m="auto">
+    <Box w={wid || "95%"} m="auto">
       <Heading size="md">{title}</Heading>
       <Text display="block" fontWeight="bold" as="u" textAlign="right">
         View All {">"}
       </Text>
-      <Flex gap="20px">
+
+      <Flex gap="20px" >
         {Deals.map((ele) => {
           return (
-            <Box border="1px solid red">
+            <Box borderRadius="5%" bg="#e3e3e3">
               <Image src={ele.img} />
               <Box
                 w="95%"
                 m="auto"
                 mb="1%"
-                border="1px solid red"
-                p="2%"
+                bg="white"
+                p="3%"
                 borderRadius="7%"
                 lineHeight="200%"
               >
@@ -74,7 +75,7 @@ const DailyDeals = ({ title }) => {
                 <hr />
                 <Text>★{ele.rating} 1229 reviews</Text>
                 <Text fontWeight="bold">₹15 Extra Discount on UPI</Text>
-                <Button colorScheme="red" w="100%">
+                <Button colorScheme="red" bg="#ff0000" w="100%">
                   ADD TO CART
                 </Button>
               </Box>

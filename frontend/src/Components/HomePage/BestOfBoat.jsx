@@ -13,9 +13,9 @@ import DailyDeals from "./DailyDeals";
 
 const BestOfBoat = ({ title }) => {
   return (
-    <Box w="95%" m="auto" mt="2%" border="1px solid red">
+    <Box w="95%" m="auto" mt="2%">
       <Heading size="md">{title}</Heading>
-      <Flex mt="1%">
+      <Flex mt="2%">
         <Tabs variant="soft-rounded" colorScheme="green">
           <TabList>
             <Tab color="black" fontSize="20px" fontWeight="bold">
@@ -34,7 +34,7 @@ const BestOfBoat = ({ title }) => {
 
           <TabPanels>
             <TabPanel>
-              <DailyDeals />
+              <DailyDeals wid={"100%"} />
             </TabPanel>
             <TabPanel>
               <p>two!</p>

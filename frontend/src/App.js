@@ -1,3 +1,4 @@
+import { Image } from "@chakra-ui/react";
 import "./App.css";
 import Login from "./Components/Authentication/Login";
 import Register from "./Components/Authentication/Register";

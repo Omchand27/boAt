@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <Box mt="2%">
       <Box bg="black">
-        <Text color="white" w="73%" textAlign="center" m="auto">
+        <Text color="white" w="73%" textAlign="center" m="auto" p="1%">
           India's fastest growing audio & wearables brand. The most incredible
           range of wireless earphones, earbuds, headphones, smart watches, and
           home audio. From workouts to adventures, boAt will get you sailing!
